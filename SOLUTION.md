@@ -26,7 +26,7 @@ This Flutter project is a comprehensive mobile application that showcase a landi
 - **Personal Expression:** To create a static flutter app.
 I experimented with stateful widgets and generated a homepage with Gesture onTap that leads to the static cappuccino page. There also a stateful back arrow that leads back to my homepage.
 
-- **GitHub:** I commit my entire project all at once as I have poor github skills but presently working to proficient in it.
+- **GitHub:** I commit my entire project all at once as I have poor github skills but presently working to be proficient in it.
 
 
 ## Features
