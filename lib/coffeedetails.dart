@@ -1,4 +1,3 @@
-import 'package:capuccino/bottombar.dart';
 import 'package:flutter/material.dart';
 
 class CoffeeDetails extends StatelessWidget {
