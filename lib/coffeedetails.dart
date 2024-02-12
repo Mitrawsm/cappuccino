@@ -1,3 +1,4 @@
+import 'package:capuccino/bottombar.dart';
 import 'package:flutter/material.dart';
 
 class CoffeeDetails extends StatelessWidget {
@@ -115,18 +116,22 @@ class CoffeeDetails extends StatelessWidget {
         ),
         bottomNavigationBar: BottomAppBar(
           height: 145,
-          color: Colors.white,
           elevation: 0,
           shadowColor: Colors.black.withOpacity(0.2),
-          child: CheckoutSection(
-              price: "\$ 4.53",
-              button: RoundedButton(
-                  text: "Buy Now",
-                  textColor: Colors.white,
-                  buttonColor: Color.fromARGB(255, 211, 133, 31),
-                  fontSize: 19.5,
-                  borderColor: Color.fromARGB(255, 211, 133, 31),
-                  height: 100)),
+          child: Container(
+            margin: EdgeInsets.only(
+              top: 10,
+            ),
+            child: CheckoutSection(
+                price: "\$ 4.53",
+                button: RoundedButton(
+                    text: "Buy Now",
+                    textColor: Colors.white,
+                    buttonColor: Color.fromARGB(255, 211, 133, 31),
+                    fontSize: 19.5,
+                    borderColor: Color.fromARGB(255, 211, 133, 31),
+                    height: 100)),
+          ),
         ));
   }
 }
@@ -356,11 +361,11 @@ class CheckoutSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 40),
+      padding: const EdgeInsets.only(bottom: 30),
       child: Row(
         children: [
           Padding(
-            padding: const EdgeInsets.only(right: 40, left: 25, bottom: 5),
+            padding: const EdgeInsets.only(right: 40, left: 25, bottom: 0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

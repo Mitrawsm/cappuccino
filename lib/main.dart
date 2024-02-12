@@ -1,8 +1,6 @@
-
 import 'package:capuccino/bottombar.dart';
 import 'package:capuccino/coffeedetails.dart';
 import 'package:flutter/material.dart';
-
 
 void main() {
   runApp(const MyApp());
@@ -18,10 +16,10 @@ class MyApp extends StatelessWidget {
       title: 'Cappuccino',
       home: Scaffold(
         body: Center(
-          child: Column(
-            children: [   
-                CoffeeDetails(),
-                ]),
+          child: Column(children: [
+            CoffeeDetails(),
+            BottomBar(),
+          ]),
         ),
         bottomNavigationBar: BottomBar(),
       ),
